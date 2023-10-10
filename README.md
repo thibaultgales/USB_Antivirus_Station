@@ -10,41 +10,41 @@ I used a Debian 12 ISO
 
 ## Installation procedure for Debian machine
 
-`Boot on the Debian 12 iso
-Install
-English
-Hostname : DS 
-Domain name : 
-Root password : root
-name account : usb
-password : usb
-Partitioning method : Guided - use entire disk
-Partitioning scheme : All file in one partition
-Choose software to install : just "ssh" & "Standard system utilities"
-Install the GRUB boot loader to your primary drive ? yes /dev/sda`
+`Boot on the Debian 12 iso`
+`Install`
+`English`
+`Hostname : DS `
+`Domain name : `
+`Root password : root`
+`name account : usb`
+`password : usb`
+`Partitioning method : Guided - use entire disk`
+`Partitioning scheme : All file in one partition`
+`Choose software to install : just "ssh" & "Standard system utilities"`
+`Install the GRUB boot loader to your primary drive ? yes /dev/sda`
 
 ## Configuration
 
-`$| su root
-#| ip a`
+`$| su root`
+`#| ip a`
 
  Retrieve the machine's IP and connect via SSH to set it up.
 
-`#| su root
-#| apt-get update
-#| apt-get install clamav
-#| systemctl stop clamav-freshclam
-#| freshclam
-#| systemctl start clamav-freshclam`
+`#| su root`
+`#| apt-get update`
+`#| apt-get install clamav`
+`#| systemctl stop clamav-freshclam`
+`#| freshclam`
+`#| systemctl start clamav-freshclam`
 
 USB error detection :
 
-`#| cd /home/usb
-#| nano check_error.sh
-	#!/bin/bash
-	if [ -e "/dev/sdc" ]; then
-    		systemctl reboot
-	fi`
+`#| cd /home/usb`
+`#| nano check_error.sh`
+	`#!/bin/bash`
+	`if [ -e "/dev/sdc" ]; then`
+    		`systemctl reboot`
+	`fi`
 
 save & exit
 
