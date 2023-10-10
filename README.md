@@ -16,15 +16,23 @@ I used a Debian 12 ISO
 
 `English`
 
-Hostname : DS 
-Domain name : 
-Root password : root
-name account : usb
-password : usb
-Partitioning method : Guided - use entire disk
-Partitioning scheme : All file in one partition
-Choose software to install : just "ssh" & "Standard system utilities"
-Install the GRUB boot loader to your primary drive ? yes /dev/sd
+`Hostname : DS`
+
+`Domain name :`
+
+`Root password : root`
+
+`name account : usb`
+
+`password : usb`
+
+`Partitioning method : Guided - use entire disk`
+
+`Partitioning scheme : All file in one partition`
+
+`Choose software to install : just "ssh" & "Standard system utilities"`
+
+`Install the GRUB boot loader to your primary drive ? yes /dev/sd`
 
 
 ## Configuration
