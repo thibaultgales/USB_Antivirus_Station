@@ -61,13 +61,10 @@ USB error detection :
 
 `#| nano check_error.sh`
 
-	`#!/bin/bash`
- 
-	`if [ -e "/dev/sdc" ]; then`
- 
-    		`systemctl reboot`
-      
-	`fi`
+	#!/bin/bash
+	if [ -e "/dev/sdc" ]; then
+    		systemctl reboot
+	fi
 
 save & exit
 
