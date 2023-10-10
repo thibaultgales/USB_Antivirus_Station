@@ -38,15 +38,21 @@ I used a Debian 12 ISO
 ## Configuration
 
 `$| su root`
+
 `#| ip a`
 
  Retrieve the machine's IP and connect via SSH to set it up.
 
 `#| su root`
+
 `#| apt-get update`
+
 `#| apt-get install clamav`
+
 `#| systemctl stop clamav-freshclam`
+
 `#| freshclam`
+
 `#| systemctl start clamav-freshclam`
 
 USB error detection :
