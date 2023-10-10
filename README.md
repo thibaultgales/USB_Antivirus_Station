@@ -10,10 +10,12 @@ I used a Debian 12 ISO
 
 ## Installation procedure for Debian machine
 
-```bash
-Boot on the Debian 12 iso`
-Install
-English
+`Boot on the Debian 12 iso`
+
+`Install`
+
+`English`
+
 Hostname : DS 
 Domain name : 
 Root password : root
