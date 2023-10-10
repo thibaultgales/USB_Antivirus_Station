@@ -66,7 +66,7 @@ USB error detection :
     		systemctl reboot
 	fi
 
-save & exit
+Save & exit
 
 Modify Cron to run automatic antivirus updates :
 
@@ -74,10 +74,10 @@ Modify Cron to run automatic antivirus updates :
 
 Added these two lines at the end of the file :
 
-`0 0 * * * systemctl stop clamav-freshclam && freshclam
-*/5 * * * * /home/usb/check_error.sh >/dev/null 2>&1`
+	0 0 * * * systemctl stop clamav-freshclam && freshclam
+	*/5 * * * * /home/usb/check_error.sh >/dev/null 2>&1
 
-save & exit
+Save & exit
 
 Image script installation
 
@@ -95,11 +95,15 @@ You must have: check_error.sh EXE.png HOME.png NOTHING.png SCAN.png VIRUS.png
 
 Create a txt file of each output of the jp2a command for each image :
 
-`#| jp2a /home/usb/VIRUS.png > VIRUS.txt
-#| jp2a /home/usb/HOME.png > HOME.txt
-#| jp2a /home/usb/SCAN.png > SCAN.txt
-#| jp2a /home/usb/NOTHING.png > NOTHING.txt
-#| jp2a /home/usb/EXE.png > EXE.txt`
+`#| jp2a /home/usb/VIRUS.png > VIRUS.txt`
+
+`#| jp2a /home/usb/HOME.png > HOME.txt`
+
+`#| jp2a /home/usb/SCAN.png > SCAN.txt`
+
+`#| jp2a /home/usb/NOTHING.png > NOTHING.txt`
+
+`#| jp2a /home/usb/EXE.png > EXE.txt`
 
 ## Scripting
 
