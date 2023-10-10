@@ -10,7 +10,8 @@ I used a Debian 12 ISO
 
 ## Installation procedure for Debian machine
 
-```Boot on the Debian 12 iso`
+```bash
+Boot on the Debian 12 iso`
 Install
 English
 Hostname : DS 
