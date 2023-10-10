@@ -185,38 +185,47 @@ Create an udev rule to automatically trigger the script when the sb key is inser
 
 Add the following line to the udev rules file :
 
-`ACTION=="add", KERNEL=="sd[b-z][0-9]", RUN+="/home/usb/check_usb.sh"`
+	ACTION=="add", KERNEL=="sd[b-z][0-9]", RUN+="/home/usb/check_usb.sh"
 
 save & exit
 
 `#| systemctl restart systemd-udevd.service`
+
 `#| mkdir /mnt/usb`
 
 WARNING after that the file /home/usb/check_usb.sh will no longer be editable :
 
-`#| chattr +i /home/usb/check_usb.sh
-#| lsattr /home/usb/check_usb.sh`
+`#| chattr +i /home/usb/check_usb.sh`
+
+`#| lsattr /home/usb/check_usb.sh`
 
 WARNING: From here on, it's the big leagues, so log in as root and don't make a single mistake.
 WARNING: this part will make the machine immutable, impossible to modify after this:
 
-`#| PATH="/sbin:$PATH"
-#| command -v usermod
-#| usermod -s /bin/rbash usb
-#| cp /etc/skel/.bashrc /home/usb/
-#| nano /home/usb/.bashrc
-    clear
-    cat /home/usb/HOME.txt
-    unset PATH
-    unset SHELL
-    unset TERM`
+`#| PATH="/sbin:$PATH"`
+
+`#| command -v usermod`
+
+`#| usermod -s /bin/rbash usb`
+
+`#| cp /etc/skel/.bashrc /home/usb/`
+
+`#| nano /home/usb/.bashrc`
+
+	clear
+	cat /home/usb/HOME.txt
+	unset PATH
+	unset SHELL
+	unset TERM`
 
 Connection party:
 This part is used to connect the user (here: usb) automatically when the physical machine is launched.
 
-`#|nano /etc/systemd/system/getty.target.wants/getty@tty1.service
+`#|nano /etc/systemd/system/getty.target.wants/getty@tty1.service`
+
     ExecStart=-/sbin/agetty --autologin usb --noclear %I $TERM
-#|systemctl daemon-reload`
+    
+`#|systemctl daemon-reload`
 
 After a short reboot, the USB decontamination machine is ready.
 
