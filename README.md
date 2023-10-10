@@ -216,7 +216,7 @@ WARNING: this part will make the machine immutable, impossible to modify after t
 	cat /home/usb/HOME.txt
 	unset PATH
 	unset SHELL
-	unset TERM`
+	unset TERM
 
 Connection party:
 This part is used to connect the user (here: usb) automatically when the physical machine is launched.
