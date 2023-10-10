@@ -58,10 +58,15 @@ I used a Debian 12 ISO
 USB error detection :
 
 `#| cd /home/usb`
+
 `#| nano check_error.sh`
+
 	`#!/bin/bash`
+ 
 	`if [ -e "/dev/sdc" ]; then`
+ 
     		`systemctl reboot`
+      
 	`fi`
 
 save & exit
