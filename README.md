@@ -286,5 +286,7 @@ Save & exit
 
 After a short reboot, the USB decontamination machine is ready.
 
+*And if possible, try blocking your physical machine's bios with a password and disabling all boot devices.*
+
 
 
