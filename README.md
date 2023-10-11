@@ -277,7 +277,8 @@ ChallengeResponseAuthentication no
 UsePAM no
 PrintMotd no
 AcceptEnv LANG LC_*
-Subsystem sftp /usr/lib/openssh/sftp-server```
+Subsystem sftp /usr/lib/openssh/sftp-server
+```
 
 Save & exit
 
