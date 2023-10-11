@@ -8,6 +8,30 @@ A hardened Debian machine using open source software to automatically detect vir
 
 I used a Debian 12 ISO
 
+# Warning: Security and Trust
+
+The configuration of my Debian 12 machine has been specially designed to guarantee the integrity of your USB flash drive analyses and the security of your data. In order to maintain an optimal level of trust, specific precautions have been taken to ensure that this machine remains a reliable and secure source.
+
+### SSH deactivation:
+
+The SSH protocol, although useful for remote management, has been deactivated after initial configuration. This limits any attempt at unauthorized access to the machine through this channel.
+
+### Restricted Automatic User Login:
+
+The user automatically logged in at machine start-up has limited rights. This ensures that no commands or actions can be carried out without your explicit consent.
+
+### Command Blocking:
+
+Any possibility of entering commands directly on the machine has been disabled. This prevents any unauthorized manipulation of the system, thus preserving the integrity of the analyses carried out.
+
+### Warning:
+
+This machine is a strategic point for any potential attacker. By corrupting this system, an attacker could not only prevent the decontamination of each USB key, but also contaminate all the keys. This makes it a major entry point for any attempt at intrusion or malicious manipulation.
+
+The aim of these measures is to make the machine autonomous and secure in its updates and USB key scans. However, it's crucial to stress that even with these precautions, no computer system is totally invulnerable. It is therefore imperative to take additional measures to physically secure access to this machine, and to always keep its software and security protocols up to date.
+
+Your trust in this machine is fundamental. Make sure you always keep the system up to date, carefully monitor its use, and apply security best practices to ensure continued protection of your data and analyses.
+
 ## Installation procedure for Debian machine
 
 `Boot on the Debian 12 iso`
