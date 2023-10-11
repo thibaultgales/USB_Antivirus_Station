@@ -217,6 +217,8 @@ save & exit
 
 `#| mkdir /mnt/usb`
 
+## 4 - Security
+
 WARNING after that the file /home/usb/check_usb.sh will no longer be editable :
 
 `#| chattr +i /home/usb/check_usb.sh`
