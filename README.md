@@ -253,6 +253,36 @@ This part is used to connect the user (here: usb) automatically when the physica
     
 `#|systemctl daemon-reload`
 
+Last security step, change the root password by a more complex one like: "ycejMkqYXT5@q!JErNireEkqdH5gF!HrdL#?zQ@8" and disable SSH connection: 
+
+`PATH="/sbin:$PATH"`
+
+`command -v passwd`
+
+`passwd root`
+
+`ycejMkqYXT5@q!JErNireEkqdH5gF!HrdL#?zQ@8`
+
+You may not disable SSH and configure your SSH key, but to keep things simple : 
+
+`echo "" > /etc/ssh/sshd_config`
+
+`nano /etc/ssh/sshd_config`
+
+```bash
+PermitRootLogin no
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM no
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server```
+
+Save & exit
+
+`systemctl restart sshd`
+
 After a short reboot, the USB decontamination machine is ready.
 
 
