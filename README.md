@@ -32,7 +32,7 @@ Any possibility of entering commands directly on the machine has been disabled. 
 
 **Your trust in this machine is fundamental. Make sure you always keep the system up to date, carefully monitor its use, and apply security best practices to ensure continued protection of your data and analyses.**
 
-## Installation procedure for Debian machine
+## 1 - Installation procedure for Debian machine
 
 `Boot on the Debian 12 iso`
 
@@ -59,7 +59,7 @@ Any possibility of entering commands directly on the machine has been disabled. 
 `Install the GRUB boot loader to your primary drive ? yes /dev/sd`
 
 
-## Configuration
+## 2 - Configuration
 
 `$| su root`
 
@@ -129,7 +129,7 @@ Create a txt file of each output of the jp2a command for each image :
 
 `#| jp2a /home/usb/EXE.png > EXE.txt`
 
-## Scripting
+## 3 - Scripting
 
 `#| nano check_usb.sh`
 
