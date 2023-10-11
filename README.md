@@ -8,7 +8,7 @@ A hardened Debian machine using open source software to automatically detect vir
 
 I used a Debian 12 ISO
 
-# Warning: Security and Trust
+## Warning: Security and Trust
 
 The configuration of my Debian 12 machine has been specially designed to guarantee the integrity of your USB flash drive analyses and the security of your data. In order to maintain an optimal level of trust, specific precautions have been taken to ensure that this machine remains a reliable and secure source.
 
