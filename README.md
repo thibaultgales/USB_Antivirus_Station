@@ -26,7 +26,7 @@ Any possibility of entering commands directly on the machine has been disabled. 
 
 ### Warning:
 
-This machine is a strategic point for any potential attacker. By corrupting this system, an attacker could not only prevent the decontamination of each USB key, but also contaminate all the keys. This makes it a major entry point for any attempt at intrusion or malicious manipulation.
+**This machine is a strategic point for any potential attacker. By corrupting this system, an attacker could not only prevent the decontamination of each USB key, but also contaminate all the keys. This makes it a major entry point for any attempt at intrusion or malicious manipulation.**
 
 The aim of these measures is to make the machine autonomous and secure in its updates and USB key scans. However, it's crucial to stress that even with these precautions, no computer system is totally invulnerable. It is therefore imperative to take additional measures to physically secure access to this machine, and to always keep its software and security protocols up to date.
 
